@@ -5,8 +5,8 @@ gnome-shell-extension-hide-dash is a simple extension that hides the dash
 from the activities overview. 
 
 If you find you dont use the dash or have a smaller screen you can use
-this extension to allow the windows and application tabs to have a close
-to full-screen area.
+this extension to hide the dash and allow the windows and application 
+tabs to have a close to full-screen area.
 
 
 Installation
