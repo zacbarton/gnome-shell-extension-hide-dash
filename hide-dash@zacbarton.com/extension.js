@@ -3,7 +3,6 @@ const Main = imports.ui.main;
 
 let hideDash;
 
-
 // extension functions
 function init() {
 	hideDash = new HideDash();
@@ -19,7 +18,7 @@ function disable() {
 
 
 // our HideDash object
-HideDash = function() {
+const HideDash = function() {
     this.init();
 }
 
