@@ -45,7 +45,7 @@ HideDash.prototype = {
 	hide: function() {
 		// global.log("show dash");
 		Main.overview._dash.actor.hide();
-		Main.overview._viewSelector.actor.set_x(0);
+		Main.overview._viewSelector.actor.set_x_align(0);
 		Main.overview._viewSelector.actor.set_width(Main.overview._group.get_width());
 		Main.overview._viewSelector.actor.queue_redraw();
 	},
@@ -53,7 +53,7 @@ HideDash.prototype = {
 	show: function() {
 		// global.log("hide dash");
 		Main.overview._dash.actor.show();
-		Main.overview._viewSelector.actor.set_x(this.old_x);
+		Main.overview._viewSelector.actor.set_x_align(this.old_x);
 		Main.overview._viewSelector.actor.set_width(this.old_width);
 		Main.overview._viewSelector.actor.queue_redraw();
 	}
