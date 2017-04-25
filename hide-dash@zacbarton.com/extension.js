@@ -27,8 +27,8 @@ HideDash.prototype = {
 		this.observer = null;
 
 		// store the values we are going to override
-		this.old_x = Main.overview._viewSelector.actor.x;
-		this.old_width = Main.overview._viewSelector.actor.get_width();
+		this.old_x = Main.overview.viewSelector.actor.x;
+		this.old_width = Main.overview.viewSelector.actor.get_width();
 	},
 	
 	enable: function() {
@@ -45,16 +45,16 @@ HideDash.prototype = {
 	hide: function() {
 		// global.log("show dash");
 		Main.overview._dash.actor.hide();
-		Main.overview._viewSelector.actor.set_x(0);
-		Main.overview._viewSelector.actor.set_width(Main.overview._group.get_width());
-		Main.overview._viewSelector.actor.queue_redraw();
+		Main.overview.viewSelector.actor.set_x(0);
+		Main.overview.viewSelector.actor.set_width(Main.overview._group.get_width());
+		Main.overview.viewSelector.actor.queue_redraw();
 	},
 
 	show: function() {
 		// global.log("hide dash");
 		Main.overview._dash.actor.show();
-		Main.overview._viewSelector.actor.set_x(this.old_x);
-		Main.overview._viewSelector.actor.set_width(this.old_width);
-		Main.overview._viewSelector.actor.queue_redraw();
+		Main.overview.viewSelector.actor.set_x(this.old_x);
+		Main.overview.viewSelector.actor.set_width(this.old_width);
+		Main.overview.viewSelector.actor.queue_redraw();
 	}
 };
